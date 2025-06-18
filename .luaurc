@@ -1,0 +1,10 @@
+{
+	"languageMode": "strict",
+	"aliases": {
+		"tests": "./tests",
+		"game": "./match",
+		"ai": "./ai",
+		"shared": "./shared",
+		"lune": "~/.lune/.typedefs/0.9.4/"
+	}
+}

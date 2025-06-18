@@ -1,0 +1,5 @@
+[tools]
+lune = "lune-org/lune@0.9.4"
+
+# no standard input library yet </3
+# lute = "luau-lang/lute@0.1.0-nightly.20250612"
