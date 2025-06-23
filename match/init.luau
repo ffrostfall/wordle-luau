@@ -45,7 +45,7 @@ function match.render_match(game_state: GameState): string
 			rendered_guess[i] = color_fmt(character.character)
 		end
 
-		table.insert(formatted_guesses, `[{guess_num}]: [{table.concat(rendered_guess, " | ")}]\n`)
+		table.insert(formatted_guesses, `[{guess_num}]: [{table.concat(rendered_guess, "")}]\n`)
 	end
 
 	local appended = ""
@@ -53,7 +53,7 @@ function match.render_match(game_state: GameState): string
 	if game_state.outcome == "won" then
 		appended = "won"
 	elseif game_state.outcome == "lost" then
-		appended = "lost"
+		appended = `lost, the word was {game_state.hidden_word}`
 	else
 		appended = `{6 - #game_state.guesses} guesses left.`
 	end
